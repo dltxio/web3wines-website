@@ -15,7 +15,7 @@ const Landing: React.FC = () => {
       <Title />
       <div className="w-full flex flex-col items-center pt-12 lg:pt-24 px-4 lg:px-32">
         <div className="w-full flex flex-col lg:grid lg:grid-cols-2">
-          <h2 className="w-full text-center lg:text-left text-[2rem] lg:text-[4rem] font-bold leading-[2.2rem] lg:leading-[4.2rem] mb-8">
+          <h2 className="w-full text-center lg:text-left text-[2rem] lg:text-[4rem] font-bold leading-[2.2rem] lg:leading-[4.2rem] mb-8 flex items-center">
             Exclusive NFT membership with Australia&apos;s top wineries
           </h2>
           <Card>
@@ -34,7 +34,7 @@ const Landing: React.FC = () => {
           </Card>
         </div>
         <div className="w-full flex flex-col lg:grid lg:grid-cols-2 mt-12 lg:mt-[10rem]">
-          <h2 className="w-full text-center lg:text-right text-[2rem] lg:text-[4rem] font-bold leading-[2.2rem] lg:leading-[4.2rem] mb-8 lg:order-2">
+          <h2 className="w-full text-center lg:text-right text-[2rem] lg:text-[4rem] font-bold leading-[2.2rem] lg:leading-[4.2rem] mb-8 lg:order-2 flex items-center">
             Best-in-class treatment, delivered straight to your door
           </h2>
           <Card classnames="lg:order-1">
@@ -54,7 +54,7 @@ const Landing: React.FC = () => {
           </Card>
         </div>
         <div className="w-full flex flex-col lg:grid lg:grid-cols-2 mt-12 lg:mt-[10rem] pb-12">
-          <h2 className="w-full text-center lg:text-left text-[2rem] lg:text-[4rem] font-bold leading-[2.2rem] lg:leading-[4.2rem] mb-8">
+          <h2 className="w-full text-center lg:text-left text-[2rem] lg:text-[4rem] font-bold leading-[2.2rem] lg:leading-[4.2rem] mb-8 flex items-center">
             Fully utilise the power of the blockchain
           </h2>
           <Card>

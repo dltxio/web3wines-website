@@ -13,12 +13,12 @@ module.exports = {
   plugins: [
     require("tailwind-heropatterns")({
       variants: [],
-      patterns: ["topography"],
+      patterns: ["plus"],
       colors: {
         default: "#FFF"
       },
       opacity: {
-        default: "0.08"
+        default: "0.05"
       }
     })
   ]

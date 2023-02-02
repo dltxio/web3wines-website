@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
   return (
     <div
       className={classNames(
-        "w-full fixed top-0 flex justify-between items-center px-2 py-1 lg:px-4 lg:py-2 lg:text-[1.1rem] transition-all duration-200",
+        "w-full fixed top-0 flex justify-between items-center px-2 py-1 lg:px-4 lg:py-2 lg:text-[1.1rem] transition-colors duration-200",
         {
           "bg-black shadow-md": scroll > screenY
         }
