@@ -29,7 +29,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.5",
-    "react-spinners": "^0.13.7"
+    "react-spinners": "^0.13.7",
+    "tailwind-heropatterns": "^0.0.8"
   },
   "devDependencies": {
     "@types/node": "^18.11.13",
@@ -37,6 +38,7 @@
     "@types/react-dom": "^18.0.9",
     "@vitejs/plugin-react": "^3.0.0",
     "autoprefixer": "^10.4.13",
+    "classnames": "^2.3.2",
     "husky": "^8.0.2",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",

@@ -1,9 +1,13 @@
 import React from "react";
+import { Navbar } from "./Navbar";
 
 type Props = {
   children: React.ReactNode;
 };
 
 export const PageLayout: React.FC<Props> = ({ children }) => (
-  <div className="w-screen">{children}</div>
+  <div className="w-full bg-black bg-hero-topography text-white">
+    <Navbar />
+    {children}
+  </div>
 );

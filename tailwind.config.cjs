@@ -10,5 +10,16 @@ module.exports = {
       }
     }
   },
-  plugins: []
+  plugins: [
+    require("tailwind-heropatterns")({
+      variants: [],
+      patterns: ["topography"],
+      colors: {
+        default: "#FFF"
+      },
+      opacity: {
+        default: "0.08"
+      }
+    })
+  ]
 };
