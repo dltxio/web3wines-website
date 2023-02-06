@@ -1,6 +1,7 @@
 import React, { useLayoutEffect } from "react";
 import { PageLayout, Title } from "../components";
 import { Card } from "../components/Card";
+import { DAOMasterLabs, DLTx } from "../images";
 
 const Landing: React.FC = () => {
   useLayoutEffect(() => {
@@ -14,7 +15,7 @@ const Landing: React.FC = () => {
     <PageLayout>
       <Title />
       <div className="w-full flex flex-col items-center pt-12 lg:pt-24 px-4 lg:px-32">
-        <div className="w-full flex flex-col lg:grid lg:grid-cols-2">
+        <section className="w-full flex flex-col lg:grid lg:grid-cols-2">
           <h2 className="w-full text-center lg:text-left text-[2rem] lg:text-[4rem] font-bold leading-[2.2rem] lg:leading-[4.2rem] mb-8 flex items-center">
             Exclusive NFT membership with Australia&apos;s top wineries
           </h2>
@@ -32,8 +33,8 @@ const Landing: React.FC = () => {
             decision-making process, including the wines they&apos;ll receive,
             perks they have access to, and more.
           </Card>
-        </div>
-        <div className="w-full flex flex-col lg:grid lg:grid-cols-2 mt-12 lg:mt-[10rem]">
+        </section>
+        <section className="w-full flex flex-col lg:grid lg:grid-cols-2 mt-12 lg:mt-[10rem]">
           <h2 className="w-full text-center lg:text-right text-[2rem] lg:text-[4rem] font-bold leading-[2.2rem] lg:leading-[4.2rem] mb-8 lg:order-2 flex items-center">
             Best-in-class treatment, delivered straight to your door
           </h2>
@@ -52,8 +53,8 @@ const Landing: React.FC = () => {
             their wine, including region, storage temperature, and the time of
             year the grapes were harvested.
           </Card>
-        </div>
-        <div className="w-full flex flex-col lg:grid lg:grid-cols-2 mt-12 lg:mt-[10rem] pb-12">
+        </section>
+        <section className="w-full flex flex-col lg:grid lg:grid-cols-2 mt-12 lg:mt-[10rem]">
           <h2 className="w-full text-center lg:text-left text-[2rem] lg:text-[4rem] font-bold leading-[2.2rem] lg:leading-[4.2rem] mb-8 flex items-center">
             Fully utilise the power of the blockchain
           </h2>
@@ -68,7 +69,34 @@ const Landing: React.FC = () => {
             advantage of a new growing market, and the next generation of
             technology.
           </Card>
-        </div>
+        </section>
+        <section className="w-full flex flex-col items-center mt-20 lg:mt-[10rem] pb-12">
+          <h3 className="w-full text-center text-[1.5rem] lg:text-[3rem] font-semibold mb-4">
+            Partners:
+          </h3>
+          <div className="w-full flex flex-col lg:flex-row lg:justify-center gap-y-[1rem] lg:gap-x-[20rem] mt-4 items-center">
+            <p className="flex flex-col-reverse items-center justify-between">
+              <span className="block whitespace-nowrap text-[1.2rem] lg:text-[1.6rem] mt-2">
+                DLTx Labs
+              </span>
+              <img
+                src={DLTx}
+                alt="DLTx Labs logo"
+                className="h-[6rem] lg:h-[8rem]"
+              />
+            </p>
+            <p className="flex flex-col-reverse items-center justify-between">
+              <span className="block whitespace-nowrap text-[1.2rem] lg:text-[1.6rem] lg:bottom-3 lg:relative">
+                DAO Master Labs
+              </span>
+              <img
+                src={DAOMasterLabs}
+                alt="DAO Master Labs logo"
+                className="h-[8rem] lg:h-[10rem]"
+              />
+            </p>
+          </div>
+        </section>
       </div>
     </PageLayout>
   );
