@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react";
 import { PageLayout, Title } from "../components";
 import { Card } from "../components/Card";
-import { DAOMasterLabs, DLTx } from "../images";
+import { DAOMasterLabs, DLTx, Blockstars, NeldnerRoad } from "../images";
 
 const Landing: React.FC = () => {
   useLayoutEffect(() => {
@@ -70,11 +70,11 @@ const Landing: React.FC = () => {
             technology.
           </Card>
         </section>
-        <section className="w-full flex flex-col items-center mt-20 lg:mt-[10rem] pb-12">
-          <h3 className="w-full text-center text-[1.5rem] lg:text-[3rem] font-semibold mb-4">
+        <section className="w-full flex flex-col items-center mt-20 lg:mt-[12rem] pb-12">
+          <h3 className="w-full text-center text-[1.5rem] lg:text-[2rem] font-semibold mb-4">
             Partners:
           </h3>
-          <div className="w-full flex flex-col lg:flex-row lg:justify-center gap-y-[1rem] lg:gap-x-[20rem] mt-4 items-center">
+          <div className="w-full flex flex-col lg:flex-row lg:justify-center gap-y-[2rem] lg:gap-x-[14rem] mt-4 items-center">
             <p className="flex flex-col-reverse items-center justify-between">
               <span className="block whitespace-nowrap text-[1.2rem] lg:text-[1.6rem] mt-2">
                 DLTx Labs
@@ -93,6 +93,26 @@ const Landing: React.FC = () => {
                 src={DAOMasterLabs}
                 alt="DAO Master Labs logo"
                 className="h-[8rem] lg:h-[10rem]"
+              />
+            </p>
+            <p className="flex flex-col-reverse items-center justify-between">
+              <span className="block whitespace-nowrap text-[1.2rem] lg:text-[1.6rem] mt-2">
+                Blockstars Technology
+              </span>
+              <img
+                src={Blockstars}
+                alt="Blockstars logo"
+                className="h-[6rem] lg:h-[8rem]"
+              />
+            </p>
+            <p className="flex flex-col-reverse items-center justify-between">
+              <span className="block whitespace-nowrap text-[1.2rem] lg:text-[1.6rem] mt-2">
+                Neldner Road
+              </span>
+              <img
+                src={NeldnerRoad}
+                alt="Neldner Road logo"
+                className="h-[6rem] lg:h-[8rem]"
               />
             </p>
           </div>
