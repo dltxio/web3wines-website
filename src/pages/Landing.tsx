@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react";
 import { PageLayout, Title } from "../components";
 import { Card } from "../components/Card";
-import { DAOMasterLabs, DLTx, Blockstars, NeldnerRoad } from "../images";
+import { DAOMasterLabs, DLTx, Blockstars, NeldnerRoad, SmartTradeNetworks } from "../images";
 
 const Landing: React.FC = () => {
   useLayoutEffect(() => {
@@ -95,6 +95,10 @@ const Landing: React.FC = () => {
                 className="h-[8rem] lg:h-[10rem]"
               />
             </p>
+          </div>
+
+          <div className="w-full flex flex-col lg:flex-row lg:justify-center gap-y-[2rem] lg:gap-x-[14rem] mt-4 items-center">
+            
             <p className="flex flex-col-reverse items-center justify-between">
               <span className="block whitespace-nowrap text-[1.2rem] lg:text-[1.6rem] mt-2">
                 Blockstars Technology
@@ -112,6 +116,16 @@ const Landing: React.FC = () => {
               <img
                 src={NeldnerRoad}
                 alt="Neldner Road logo"
+                className="h-[6rem] lg:h-[8rem]"
+              />
+            </p>
+            <p className="flex flex-col-reverse items-center justify-between">
+              <span className="block whitespace-nowrap text-[1.2rem] lg:text-[1.6rem] mt-2">
+                Smart Trade Networks
+              </span>
+              <img
+                src={SmartTradeNetworks}
+                alt="Smart Trade Networks logo"
                 className="h-[6rem] lg:h-[8rem]"
               />
             </p>
