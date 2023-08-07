@@ -1,5 +1,5 @@
 import React from "react";
-import { WineGlass } from "../images";
+import { CellarDoor, WineGlass } from "../images";
 
 export const Title: React.FC = () => (
   <div className="w-full bg-gradient-to-br from-rose-600 to-fuchsia-900 h-[50vh] flex flex-col items-center justify-center lg:items-start">

@@ -1,7 +1,7 @@
 {
-  "name": "very-quick-react-template",
+  "name": "web3wines",
   "version": "1.0.3",
-  "description": "A Very Quick React Template",
+  "description": "Web 3 Wines",
   "keywords": [
     "template",
     "react",
@@ -9,12 +9,12 @@
     "tailwindcss",
     "typescript"
   ],
-  "homepage": "https://github.com/brettvniekerk/vqrt",
+  "homepage": "https://web3wines.org",
   "license": "GPL-3.0-or-later",
   "author": "@brettvniekerk",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brettvniekerk/vqrt.git"
+    "url": "git@github.com:web3wines/web3wines-website.git"
   },
   "type": "module",
   "scripts": {
@@ -48,6 +48,6 @@
     "vite": "^4.0.0"
   },
   "engines": {
-    "node": ">=16.14.2"
+    "node": ">=16.16.0"
   }
 }
