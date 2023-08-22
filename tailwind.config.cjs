@@ -5,9 +5,16 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('src/images/HeroBackground.png')",
+      },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans]
-      }
+      },
+      colors: {
+        'navbar': '#8B6E4B',
+        'page': '#700D14'
+      },
     }
   },
   plugins: [
@@ -20,6 +27,6 @@ module.exports = {
       opacity: {
         default: "0.05"
       }
-    })
+    }),
   ]
 };
