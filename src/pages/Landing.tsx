@@ -1,7 +1,7 @@
 import React, { useLayoutEffect } from "react";
 import {PageLayout } from "../components";
 import { DAOMasterLabs, DLTx, Blockstars, NeldnerRoad, SmartTradeNetworks } from "../images";
-import { Hero } from "../components/Hero";
+import { Hero } from "../components";
 
 const Landing: React.FC = () => {
   useLayoutEffect(() => {
