@@ -12,11 +12,11 @@ const navigation = [
     { name: 'Contact Us', href: '/contact_us', current: false },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function NavBar() {
     return (
         <Disclosure as="nav" className="bg-navbar">
             {({ open }) => (
