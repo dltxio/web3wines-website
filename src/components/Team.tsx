@@ -2,26 +2,26 @@ const people = [
     {
         name: 'ABC',
         role: 'Co-Founder / CEO',
-        imageUrl: '/',
+        imageUrl: 'https://www.dltx.io/images/icons/coding.png',
         desc:'ABC has 10 years experience in blockchain',
     },
 
     {
-        name: 'EFG',
-        role: 'CTO',
-        imageUrl: '/',
+        name: 'DEF',
+        role: 'Co-Founder/ CTO',
+        imageUrl: 'https://www.dltx.io/images/icons/coding.png',
         desc:'EFG has 10 years experience in blockchain',
     },
     {
         name: 'OPQ',
         role: 'CFO',
-        imageUrl: '/',
+        imageUrl: 'https://www.dltx.io/images/icons/coding.png',
         desc:'OPQ has 10 years experience in blockchain',
     },
     {
         name: 'XYZ',
         role: 'COO',
-        imageUrl: '/',
+        imageUrl: 'https://www.dltx.io/images/icons/coding.png',
         desc:'XYZ has 10 years experience in blockchain',
     },
 
@@ -45,7 +45,7 @@ export default function Team(){
                                 <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
                                 <div>
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                                    <p className="text-sm font-semibold leading-6 text-indigo-600">{person.role}</p>
+                                    <p className="text-sm font-semibold leading-6 text-gray-500">{person.role}</p>
                                     <p className="text-sm leading-6 text-gray-600">{person.desc}</p>
                                 </div>
                             </div>
