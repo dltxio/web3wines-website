@@ -1,43 +1,29 @@
 import { Typography } from "@material-tailwind/react";
 
+const currentYear = new Date().getFullYear();
+
 export function Footer() {
     return (
-        <footer className="flex w-full flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 border-t border-blue-gray-50 py-6 text-center md:justify-between bg-navbar">
-            <Typography color="blue-gray" className="font-normal">
-                &copy; 2023 Web3 Wines. All rights reserved.
-            </Typography>
-            <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
-                <li>
+        <footer className="relative w-full bg-navbar py-6">
+            <div className="mx-auto w-full max-w-7xl px-8">
+                <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
+                    <h1 className="font-bold">WEB3 WINES</h1>
+                    <ul>
+                        <li>Address: 1 Eagle St., Brisbane QLD 4000 Australia</li>
+                        <li>Phone: 0423456789</li>
+                        <li>Email: info@web3wines.org</li>
+                    </ul>
+                </div>
+                <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
                     <Typography
-                        as="a"
-                        href="/about_us"
-                        color="blue-gray"
-                        className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
+                        variant="small"
+                        className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
                     >
-                        About Us
+                        &copy; {currentYear} <a href="/">Web3 Wines</a>. All
+                        Rights Reserved.
                     </Typography>
-                </li>
-                <li>
-                    <Typography
-                        as="a"
-                        href="/faqs"
-                        color="blue-gray"
-                        className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-                    >
-                        FAQs
-                    </Typography>
-                </li>
-                <li>
-                    <Typography
-                        as="a"
-                        href="/contact_us"
-                        color="blue-gray"
-                        className="font-normal transition-colors hover:text-blue-500 focus:text-blue-500"
-                    >
-                        Contact Us
-                    </Typography>
-                </li>
-            </ul>
+                </div>
+            </div>
         </footer>
     );
 }
