@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const PageLayout: React.FC<Props> = ({ children }) => (
-  <div className="w-full bg-page text-white">
+  <div className="w-full bg-black text-white">
     <NavBar />
       <div>
           {children}
