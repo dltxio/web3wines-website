@@ -1,5 +1,3 @@
-import { Typography } from "@material-tailwind/react";
-
 const currentYear = new Date().getFullYear();
 
 export function Footer() {
@@ -15,13 +13,11 @@ export function Footer() {
                     </ul>
                 </div>
                 <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
-                    <Typography
-                        variant="small"
-                        className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+                    <div className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
                     >
                         &copy; {currentYear} <a href="/">Web3 Wines</a>. All
                         Rights Reserved.
-                    </Typography>
+                    </div>
                 </div>
             </div>
         </footer>
