@@ -15,7 +15,7 @@ const ContactUs: React.FC = () => {
                 <div className="mx-auto max-w-2xl text-center">
                     <h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">Contact Us</h2>
                 </div>
-                <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
+                <form action=" " method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
                             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
