@@ -1,12 +1,6 @@
 import React, { useLayoutEffect } from "react";
 import { PageLayout } from "../components";
-import { useState } from 'react';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Switch } from '@headlessui/react';
 
-function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(' ')
-}
 const ContactUs: React.FC = () => {
     useLayoutEffect(() => {
         window.scrollTo({
@@ -14,8 +8,6 @@ const ContactUs: React.FC = () => {
             behavior: "smooth"
         });
     }, []);
-
-    const [agreed, setAgreed] = useState(false)
 
     return (
         <PageLayout>
@@ -99,10 +91,6 @@ const ContactUs: React.FC = () => {
                                         <option>US</option>
                                         <option>EU</option>
                                     </select>
-                                    <ChevronDownIcon
-                                        className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                                        aria-hidden="true"
-                                    />
                                 </div>
                                 <input
                                     type="tel"
