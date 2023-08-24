@@ -29,11 +29,11 @@ const people = [
 
 export default function Team(){
     return (
-        <div className="bg-white py-24 sm:py-32">
+        <div className="bg-page py-24 sm:py-32">
             <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
                 <div className="max-w-2xl">
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Team</h2>
-                    <p className="mt-6 text-lg leading-8 text-gray-600">
+                    <h2 className="text-3xl font-bold tracking-tight text-navbar sm:text-4xl">Our Team</h2>
+                    <p className="mt-6 text-lg leading-8 text-white">
                         Our team of management has years of experience in the field. They are passionate about using blockchain technology
                         to create innovative solutions and has been instrumental in developing our wine verification system.
                     </p>
@@ -44,9 +44,9 @@ export default function Team(){
                             <div className="flex items-center gap-x-6">
                                 <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
                                 <div>
-                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                                    <p className="text-sm font-semibold leading-6 text-gray-500">{person.role}</p>
-                                    <p className="text-sm leading-6 text-gray-600">{person.desc}</p>
+                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-navbar">{person.name}</h3>
+                                    <p className="text-sm font-semibold leading-6 text-white">{person.role}</p>
+                                    <p className="text-sm leading-6 text-white">{person.desc}</p>
                                 </div>
                             </div>
                         </li>

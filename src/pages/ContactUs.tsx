@@ -11,14 +11,14 @@ const ContactUs: React.FC = () => {
 
     return (
         <PageLayout>
-            <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+            <div className="isolate bg-page px-6 py-24 sm:py-32 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">Contact Us</h2>
+                    <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">Contact Us</h2>
                 </div>
                 <form action=" " method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
                     <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
                         <div>
-                            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-white">
                                 First name
                             </label>
                             <div className="mt-2.5">
@@ -32,7 +32,7 @@ const ContactUs: React.FC = () => {
                             </div>
                         </div>
                         <div>
-                            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-white">
                                 Last name
                             </label>
                             <div className="mt-2.5">
@@ -46,7 +46,7 @@ const ContactUs: React.FC = () => {
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
+                            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-white">
                                 Organisation
                             </label>
                             <div className="mt-2.5">
@@ -60,7 +60,7 @@ const ContactUs: React.FC = () => {
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-white">
                                 Email
                             </label>
                             <div className="mt-2.5">
@@ -74,7 +74,7 @@ const ContactUs: React.FC = () => {
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
+                            <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-white">
                                 Phone number
                             </label>
                             <div className="relative mt-2.5">
@@ -85,7 +85,7 @@ const ContactUs: React.FC = () => {
                                     <select
                                         id="country"
                                         name="country"
-                                        className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+                                        className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-900 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                                     >
                                         <option>AU</option>
                                         <option>US</option>
@@ -102,7 +102,7 @@ const ContactUs: React.FC = () => {
                             </div>
                         </div>
                         <div className="sm:col-span-2">
-                            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-white">
                                 Message
                             </label>
                             <div className="mt-2.5">

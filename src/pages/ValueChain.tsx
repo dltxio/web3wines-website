@@ -58,12 +58,12 @@ const ValueChain: React.FC = () => {
 
     return (
         <PageLayout>
-            <div className="bg-white py-24 sm:py-32">
+            <div className="bg-page py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl sm:text-center">
-                        <h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">Wine Industry</h2>
-                        <h2 className="text-4xl font-bold tracking-tight text-black sm:text-6xl">Value Chain</h2>
-                        <p className="mt-6 text-lg leading-8 text-gray-600">
+                        <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">Wine Industry</h2>
+                        <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">Value Chain</h2>
+                        <p className="mt-6 text-lg leading-8 text-white">
                             Australian wine industry value chain consists of several interconnected elements
                             that contribute to the production, distribution, and consumption of wine.
                         </p>
@@ -71,8 +71,8 @@ const ValueChain: React.FC = () => {
                         {valueChain.map((item) => (
                             <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
                                 <div className="p-8 sm:p-10 lg:flex-auto">
-                                    <h3 className="text-2xl font-bold tracking-tight text-gray-900">{item.name}</h3>
-                                    <p className="mt-6 text-base leading-7 text-gray-600">{item.desc}</p>
+                                    <h3 className="text-2xl font-bold tracking-tight text-navbar">{item.name}</h3>
+                                    <p className="mt-6 text-base leading-7 text-white">{item.desc}</p>
                                 </div>
                             </div>
                         ))}

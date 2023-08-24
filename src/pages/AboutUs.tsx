@@ -22,7 +22,7 @@ const AboutUs: React.FC = () => {
             <div className="relative isolate overflow-hidden bg-hero-pattern py-24 sm:py-32">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto max-w-2xl lg:mx-0">
-                        <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">About Us</h2>
+                        <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">About Us</h2>
                         <p className="mt-6 text-lg leading-8 text-gray-300">
                             Web3 Wines is a consortium of industry experts, primary producers, and enthusiasts with the focus of using blockchain technology to verify premium wines.
                             Our goal is to have a positive effect on the wider Australian wine industry by introducing a new technology that brings verifiable trust.
