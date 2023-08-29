@@ -7,7 +7,7 @@ export function Footer() {
                 <div className="gap-4">
                     <div className="text-white font-bold">WEB3 WINES</div>
                     <div>
-                        <p>Address: Brisbane QLD 4000</p>
+                        <p>Address: 1 Eagle St., Brisbane QLD 4000</p>
                         <p>Email: info@web3wines.org</p>
                         <p>Phone: (04)2345678</p>
                     </div>

@@ -16,7 +16,7 @@ const Landing: React.FC = () => {
       <Hero />
       <div className="w-full flex flex-col items-center pt-12 lg:pt-24 px-4 lg:px-32">
         <section className="w-full flex text-center">
-          <p className="w-full justify-between text-center text-[1rem] lg:text-[2rem] leading-[2.2rem] lg:leading-[4.2rem] mb-5 flex items-center">
+          <p className="w-full justify-between text-center rounded-2xl ring-2 ring-gray-200 text-[1rem] lg:text-[2rem] leading-[2.2rem] lg:leading-[4.2rem] mb-5 flex items-center">
             Web3 Wines is a consortium of industry experts, primary producers, and enthusiasts with the focus of using blockchain technology to verify premium wines.
           </p>
         </section>

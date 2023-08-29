@@ -12,8 +12,8 @@ module.exports = {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans]
       },
       colors: {
-        'navbar': '#8B6E4B',
-        'page': '#700D14'
+        'navbar': '#987654',
+        'page': '#722F37', //bordeaux
       },
     }
   },

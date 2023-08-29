@@ -10,7 +10,7 @@ const people = [
         name: 'DEF',
         role: 'Co-Founder/ CTO',
         imageUrl: 'https://www.dltx.io/images/icons/coding.png',
-        desc:'EFG has 10 years experience in blockchain',
+        desc:'DEF has 10 years experience in blockchain',
     },
     {
         name: 'OPQ',
