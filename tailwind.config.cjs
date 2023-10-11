@@ -5,8 +5,15 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('src/images/HeroBackground.png')"
+      },
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans]
+      },
+      colors: {
+        navbar: "#987654",
+        page: "#722F37" //bordeaux
       }
     }
   },
