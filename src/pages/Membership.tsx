@@ -1,6 +1,8 @@
 import React, { useLayoutEffect } from "react";
 import { PageLayout } from "../components";
 
+const FORM_LINK = "https://nzue9lvyzct.typeform.com/to/NjwnOkMt";
+
 const Membership: React.FC = () => {
   useLayoutEffect(() => {
     window.scrollTo({
@@ -36,7 +38,7 @@ const Membership: React.FC = () => {
           <div className="mt-6 text-lg leading-8 text-white">
             <p>
               Fill in{" "}
-              <a href="/" className="underline underline-offset-4">
+              <a href={FORM_LINK} className="underline underline-offset-4">
                 EOI form
               </a>{" "}
               or send email to us at info@web3wines.org.
