@@ -16,31 +16,31 @@ const Routing: AppRoutes = [
   },
   {
     path: "/about_us",
-    element:<AboutUs />
+    element: <AboutUs />
   },
   {
     path: "/value_chain",
-    element:<ValueChain />
+    element: <ValueChain />
   },
   {
     path: "/blockchain_app",
-    element:<BlockchainApp />
+    element: <BlockchainApp />
   },
   {
     path: "/membership",
-    element:<Membership />
+    element: <Membership />
   },
   {
     path: "/news",
-    element:<News />
+    element: <News />
   },
   {
     path: "/faqs",
-    element:<Faqs />
+    element: <Faqs />
   },
   {
     path: "/contact_us",
-    element:<ContactUs />
+    element: <ContactUs />
   }
 ];
 

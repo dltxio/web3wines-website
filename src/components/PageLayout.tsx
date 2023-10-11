@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
-import {Footer} from "./Footer";
+import { Footer } from "./Footer";
 
 type Props = {
   children: React.ReactNode;
@@ -9,9 +9,7 @@ type Props = {
 export const PageLayout: React.FC<Props> = ({ children }) => (
   <div className="w-full bg-page text-white">
     <NavBar />
-      <div>
-          {children}
-      </div>
-    <Footer/>
+    <div>{children}</div>
+    <Footer />
   </div>
 );
