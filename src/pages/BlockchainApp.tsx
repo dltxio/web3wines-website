@@ -57,7 +57,6 @@ const BlockchainApp: React.FC = () => {
           </div>
           {application.map(item => (
             <Card>
-              <div>
                 <div className="p-8 sm:p-10 lg:flex-auto text-center text-navbar">
                   <h3 className="text-2xl font-bold tracking-tight">
                     {item.name}
@@ -66,7 +65,6 @@ const BlockchainApp: React.FC = () => {
                     {item.desc}
                   </p>
                 </div>
-              </div>
             </Card>
           ))}
         </div>
