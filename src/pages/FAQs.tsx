@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import { PageLayout } from "../components";
+import { Card, PageLayout } from "../components";
 
 const faqs = [
   {
@@ -33,16 +33,21 @@ const FAQs: React.FC = () => {
             </h2>
           </div>
           {faqs.map(item => (
-            <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-              <div className="p-8 sm:p-10 lg:flex-auto">
-                <h3 className="text-2xl font-bold tracking-tight text-navbar">
-                  {item.id}. {item.question}
-                </h3>
-                <p className="mt-6 text-base leading-7 text-white">
-                  {item.answer}
-                </p>
+            <Card>
+              <div className="grid grid-cols-8 cols-2 p-8 sm:p-10 flex-auto text-justify text-navbar">
+                <h1 className="col-span-1 text-8xl font-bold tracking-tight">
+                  {item.id}
+                </h1>
+                <div className="col-span-7">
+                  <h3 className="text-xl font-bold tracking-tight ">
+                    {item.question}
+                  </h3>
+                  <p className="mt-2 leading-7 text-white group-hover:text-navbar">
+                    {item.answer}
+                  </p>
+                </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
