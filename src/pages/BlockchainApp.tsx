@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from "react";
-import { PageLayout } from "../components";
+import { Card, PageLayout } from "../components";
 
 const application = [
   {
@@ -56,16 +56,18 @@ const BlockchainApp: React.FC = () => {
             </p>
           </div>
           {application.map(item => (
-            <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-              <div className="p-8 sm:p-10 lg:flex-auto">
-                <h3 className="text-2xl font-bold tracking-tight text-navbar">
-                  {item.name}
-                </h3>
-                <p className="mt-6 text-base leading-7 text-white">
-                  {item.desc}
-                </p>
+            <Card>
+              <div>
+                <div className="p-8 sm:p-10 lg:flex-auto text-center text-navbar">
+                  <h3 className="text-2xl font-bold tracking-tight">
+                    {item.name}
+                  </h3>
+                  <p className="mt-6 text-base leading-7 invisible group-hover:visible">
+                    {item.desc}
+                  </p>
+                </div>
               </div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
