@@ -133,7 +133,7 @@ const News: React.FC = () => {
                   </time>
                   <a
                     href={post.category.href}
-                    className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-navbar hover:bg-gray-100"
+                    className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-navbar"
                   >
                     {post.category.title}
                   </a>
@@ -145,7 +145,7 @@ const News: React.FC = () => {
                       {post.title}
                     </a>
                   </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-white">
+                  <p className="p-4 rounded-xl mt-5 line-clamp-3 text-sm leading-6 text-white group-hover:bg-orange-50 group-hover:text-navbar">
                     {post.description}
                   </p>
                 </div>
