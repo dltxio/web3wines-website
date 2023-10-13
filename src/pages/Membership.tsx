@@ -37,13 +37,17 @@ const Membership: React.FC = () => {
           </p>
           <div className="mt-6 text-lg leading-8 text-white">
             <p>
-              Fill in{" "}
-              <a href={FORM_LINK} className="underline underline-offset-4">
-                EOI form
-              </a>{" "}
-              or send email to us at info@web3wines.org.
+              Fill in the EOI form or send email to us at info@web3wines.org.
             </p>
             <p>Our team will contact you for further process!</p>
+          </div>
+          <div className="py-4">
+            <a
+              href={FORM_LINK}
+              className="p-3 rounded-xl bg-navbar font-bold hover:bg-orange-50 hover:text-navbar"
+            >
+              Submit EOI
+            </a>
           </div>
         </div>
       </div>
