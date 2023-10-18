@@ -13,7 +13,7 @@ const Membership: React.FC = () => {
 
   return (
     <PageLayout>
-      <div className="overflow-hidden h-screen bg-page text-center py-24 sm:py-32">
+      <div className="overflow-hidden h-screen bg-black text-center py-24 sm:py-32">
         <h2 className="text-4xl font-bold tracking-tight text-navbar text-center sm:text-6xl">
           Membership
         </h2>

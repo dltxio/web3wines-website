@@ -28,7 +28,7 @@ const people = [
 
 export default function Team() {
   return (
-    <div className="bg-page py-24 sm:py-32">
+    <div className="bg-black py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-bold tracking-tight text-navbar sm:text-4xl">
@@ -60,7 +60,7 @@ export default function Team() {
                   <p className="text-sm font-semibold leading-6 text-white group-hover:text-navbar">
                     {person.role}
                   </p>
-                  <p className="text-sm leading-6 text-page group-hover:text-navbar">
+                  <p className="text-sm leading-6 text-black group-hover:text-navbar">
                     {person.desc}
                   </p>
                 </div>
