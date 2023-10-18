@@ -5,9 +5,13 @@ const navigation = [
   { name: "HOME", href: "/", current: true },
   { name: "ABOUT US", href: "/about_us", current: false },
   { name: "VALUE CHAIN", href: "/value_chain", current: false },
-  { name: "BLOCKCHAIN APPLICATION", href: "/blockchain_app", current: false },
+  {
+    name: "BLOCKCHAIN APPLICATION",
+    href: "/blockchain_application",
+    current: false
+  },
   { name: "MEMBERSHIP", href: "/membership", current: false },
-  { name: "NEWS & UPDATES", href: "/news", current: false },
+  { name: "NEWS & UPDATES", href: "/news_&_updates", current: false },
   { name: "FAQs", href: "/faqs", current: false },
   { name: "CONTACT US", href: "/contact_us", current: false }
 ];
