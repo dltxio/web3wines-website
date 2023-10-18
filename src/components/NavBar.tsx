@@ -2,14 +2,14 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "/", current: true },
-  { name: "About Us", href: "/about_us", current: false },
-  { name: "Value Chain", href: "/value_chain", current: false },
-  { name: "Blockchain Application", href: "/blockchain_app", current: false },
-  { name: "Membership", href: "/membership", current: false },
-  { name: "News & Updates", href: "/news", current: false },
+  { name: "HOME", href: "/", current: true },
+  { name: "ABOUT US", href: "/about_us", current: false },
+  { name: "VALUE CHAIN", href: "/value_chain", current: false },
+  { name: "BLOCKCHAIN APPLICATION", href: "/blockchain_app", current: false },
+  { name: "MEMBERSHIP", href: "/membership", current: false },
+  { name: "NEWS & UPDATES", href: "/news", current: false },
   { name: "FAQs", href: "/faqs", current: false },
-  { name: "Contact Us", href: "/contact_us", current: false }
+  { name: "CONTACT US", href: "/contact_us", current: false }
 ];
 
 function classNames(...classes: string[]) {
@@ -45,7 +45,7 @@ export default function NavBar() {
                           item.current
                             ? "bg-gray-900 text-white active:bg-gray-700"
                             : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-sm font-medium"
+                          "rounded-md px-3 py-2 font-sans font-thin tracking-wide text-xs"
                         )}
                         aria-current={item.current ? "page" : undefined}
                       >
@@ -69,7 +69,7 @@ export default function NavBar() {
                     item.current
                       ? "bg-gray-900 text-white"
                       : "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "block rounded-md px-3 py-2 text-base font-medium"
+                    "block rounded-md px-3 py-2 font-sans font-thin tracking-wide text-xs"
                   )}
                   aria-current={item.current ? "page" : undefined}
                 >
