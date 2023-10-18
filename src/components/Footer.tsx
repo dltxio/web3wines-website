@@ -4,17 +4,14 @@ export function Footer() {
   return (
     <footer className="relative w-full bg-navbar py-3">
       <div className="mx-auto w-full px-5 text-center">
-        <div className="gap-4">
-          <div className="text-white font-bold">WEB3 WINES</div>
-          <div>
-            <p>Address: 1 Eagle St., Brisbane QLD 4000</p>
-            <p>Email: info@web3wines.org</p>
-          </div>
+        <div className="gap-4 font-sans font-thin tracking-wide text-xs">
+          <p>WEB3 WINES</p>
+          <p>ADDRESS: LEVEL 18, 1 EAGLE STREET, BRISBANE QLD 4000 AUSTRALIA</p>
+          <p>EMAIL: INFO@WEB3WINES.ORG</p>
         </div>
         <div className="mt-3 flex w-full flex-col text-center border-t border-blue-gray-50 py-3">
-          <div className="mb-4 font-normal text-white md:mb-0">
-            &copy; {currentYear} <a href="/">Web3 Wines</a>. All rights
-            reserved.
+          <div className="mb-4 font-sans font-thin tracking-wide text-xs md:mb-0">
+            &copy; {currentYear} <a href="/">WEB3 WINES</a>. ALL RIGHTS RESERVED
           </div>
           <div className="flex mt-6 space-x-10 justify-center">
             <a
