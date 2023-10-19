@@ -1,8 +1,9 @@
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useEffect, useState } from "react";
 
 const navigation = [
-  { name: "HOME", href: "/", current: true },
+  { name: "HOME", href: "/", current: false },
   { name: "ABOUT US", href: "/about_us", current: false },
   { name: "VALUE CHAIN", href: "/value_chain", current: false },
   {
@@ -21,6 +22,31 @@ function classNames(...classes: string[]) {
 }
 
 export default function NavBar() {
+  const [navItems, setNavItems] = useState(navigation);
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    const updatedNavItems = navItems.map(item => {
+      if (item.href === path) {
+        return { ...item, current: true };
+      } else {
+        return { ...item, current: false };
+      }
+    });
+    setNavItems(updatedNavItems);
+  }, []);
+
+  const handleNavButtonClick = (name: string) => {
+    const updatedNavigation = navItems.map(item => {
+      if (item.name === name) {
+        return { ...item, current: true };
+      } else {
+        return { ...item, current: false };
+      }
+    });
+    setNavItems(updatedNavigation);
+  };
+
   return (
     <Disclosure as="nav" className="bg-navbar">
       {({ open }) => (
@@ -41,10 +67,11 @@ export default function NavBar() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex justify-center space-x-10">
-                    {navigation.map(item => (
+                    {navItems.map(item => (
                       <a
                         key={item.name}
                         href={item.href}
+                        onClick={() => handleNavButtonClick(item.name)}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white active:bg-gray-700"
@@ -64,11 +91,12 @@ export default function NavBar() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map(item => (
+              {navItems.map(item => (
                 <Disclosure.Button
                   key={item.name}
                   as="a"
                   href={item.href}
+                  onClick={() => handleNavButtonClick(item.name)}
                   className={classNames(
                     item.current
                       ? "bg-gray-900 text-white"
