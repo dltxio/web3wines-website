@@ -23,7 +23,7 @@ const Routing: AppRoutes = [
     element: <ValueChain />
   },
   {
-    path: "/blockchain_app",
+    path: "/blockchain_application",
     element: <BlockchainApp />
   },
   {
@@ -31,7 +31,7 @@ const Routing: AppRoutes = [
     element: <Membership />
   },
   {
-    path: "/news",
+    path: "/news_&_updates",
     element: <News />
   },
   {
