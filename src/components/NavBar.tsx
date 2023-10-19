@@ -27,22 +27,14 @@ export default function NavBar() {
   useEffect(() => {
     const path = window.location.pathname;
     const updatedNavItems = navItems.map(item => {
-      if (item.href === path) {
-        return { ...item, current: true };
-      } else {
-        return { ...item, current: false };
-      }
+      return { ...item, current: item.href === path };
     });
     setNavItems(updatedNavItems);
   }, []);
 
   const handleNavButtonClick = (name: string) => {
     const updatedNavigation = navItems.map(item => {
-      if (item.name === name) {
-        return { ...item, current: true };
-      } else {
-        return { ...item, current: false };
-      }
+      return { ...item, current: item.name === name };
     });
     setNavItems(updatedNavigation);
   };
