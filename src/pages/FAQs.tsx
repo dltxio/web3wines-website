@@ -25,31 +25,38 @@ const FAQs: React.FC = () => {
 
   return (
     <PageLayout>
-      <div className="bg-page h-screen py-24 sm:py-32">
+      <div className="relative isolate overflow-hidden bg-cover bg-hero-pattern py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl sm:text-center">
+          <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">
               FAQs
             </h2>
+            <p className="mt-2 text-lg leading-8 text-white">
+              Common questions about our services and policies. If you can't
+              find the information you're looking for, please don't hesitate to
+              reach out to us directly.
+            </p>
           </div>
-          {faqs.map(item => (
-            <Card>
-              <div className="grid grid-cols-8 cols-2 p-8 sm:p-10 flex-auto text-justify text-navbar">
-                <h1 className="col-span-1 text-8xl font-bold tracking-tight">
-                  {item.id}
-                </h1>
-                <div className="col-span-7">
-                  <h3 className="text-xl font-bold tracking-tight ">
-                    {item.question}
-                  </h3>
-                  <p className="mt-2 leading-7 text-white group-hover:text-navbar">
-                    {item.answer}
-                  </p>
-                </div>
-              </div>
-            </Card>
-          ))}
         </div>
+      </div>
+      <div className="bg-page py-12 sm:py-24 mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        {faqs.map(item => (
+          <Card>
+            <div className="grid grid-cols-8 cols-2 p-8 sm:p-10 flex-auto text-justify text-navbar">
+              <h1 className="col-span-2 text-8xl font-bold tracking-tight">
+                {item.id}
+              </h1>
+              <div className="col-span-6">
+                <h3 className="text-xl font-bold tracking-tight ">
+                  {item.question}
+                </h3>
+                <p className="mt-2 leading-7 text-white group-hover:text-navbar">
+                  {item.answer}
+                </p>
+              </div>
+            </div>
+          </Card>
+        ))}
       </div>
     </PageLayout>
   );
