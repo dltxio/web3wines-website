@@ -109,7 +109,7 @@ const News: React.FC = () => {
 
   return (
     <PageLayout>
-      <div className="bg-page py-24 sm:py-32">
+      <div className="relative isolate overflow-hidden bg-cover bg-hero-pattern py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">
@@ -121,7 +121,11 @@ const News: React.FC = () => {
               projects.
             </p>
           </div>
-          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        </div>
+      </div>
+      <div className="bg-page py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 g:mx-0 lg:max-w-none lg:grid-cols-3">
             {posts.map(post => (
               <article
                 key={post.id}

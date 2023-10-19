@@ -13,40 +13,38 @@ const Membership: React.FC = () => {
 
   return (
     <PageLayout>
-      <div className="overflow-hidden h-screen bg-page text-center py-24 sm:py-32">
-        <h2 className="text-4xl font-bold tracking-tight text-navbar text-center sm:text-6xl">
-          Membership
-        </h2>
-        <div className="py-8">
-          <p className="mt-2 text-3xl font-bold tracking-tight text-navbar sm:text-4xl">
-            Benefits of becoming a member
-          </p>
-          <ul className="mt-6 text-lg leading-8 text-white">
-            <li>Enhanced Transparency</li>
-            <li>Anti-Counterfeiting</li>
-            <li>Quality Assurance</li>
-            <li>Consumer Engagement</li>
-            <li>Regulatory Compliance</li>
-            <li>Efficient Supply Chain</li>
-            <li>Data Security</li>
-          </ul>
+      <div className="relative isolate overflow-hidden bg-cover bg-hero-pattern py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">
+              Membership Benefits
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              Membership offers unparalleled benefits, including enhanced
+              transparency, anti-counterfeiting measures, and guaranteed quality
+              assurance. Engage directly with us, ensuring regulatory
+              compliance, a streamlined supply chain, and robust data security
+              for a seamless experience.
+            </p>
+          </div>
         </div>
-        <div>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-navbar sm:text-4xl">
-            Membership joining process
-          </p>
-          <div className="mt-6 text-lg leading-8 text-white">
-            <p>Fill in EOI form or send email to us at info@web3wines.org.</p>
-            <p>Our team will contact you for further process!</p>
-          </div>
-          <div className="py-4">
-            <a
-              href={FORM_LINK}
-              className="p-3 rounded-xl bg-navbar font-bold hover:bg-orange-50 hover:text-navbar"
-            >
-              Submit EOI
-            </a>
-          </div>
+      </div>
+
+      <div className="bg-page py-12 sm:py-24 mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        <p className="mt-2 text-3xl font-bold tracking-tight text-navbar sm:text-4xl">
+          Membership joining process
+        </p>
+        <div className="mt-6 text-lg leading-8 text-white">
+          <p>Fill in EOI form or send email to us at info@web3wines.org.</p>
+          <p>Our team will contact you for further process!</p>
+        </div>
+        <div className="py-12">
+          <a
+            href={FORM_LINK}
+            className="p-3 rounded-xl bg-navbar font-bold hover:bg-orange-50 hover:text-navbar"
+          >
+            Submit EOI
+          </a>
         </div>
       </div>
     </PageLayout>

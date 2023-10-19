@@ -58,36 +58,40 @@ const ValueChain: React.FC = () => {
 
   return (
     <PageLayout>
-      <div className="bg-page py-24 sm:py-32">
+      <div className="relative isolate overflow-hidden bg-cover bg-hero-pattern py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl sm:text-center">
+          <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">
               Wine Industry
             </h2>
             <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">
               Value Chain
             </h2>
-            <p className="mt-6 text-lg leading-8 text-white">
-              Australian wine industry value chain consists of several
-              interconnected elements that contribute to the production,
-              distribution, and consumption of wine.
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              The Australian wine industry's value chain involves diverse
+              stages, from grape cultivation to global distribution, fostering
+              unique flavors and global recognition. With an intricate web of
+              production, distribution, and consumption, it sustains a vibrant
+              culture of wine appreciation and global export. Each step, from
+              cultivation to distribution, is crucial in defining the distinct
+              quality and characteristics of the final product, contributing to
+              its global presence and acclaim.
             </p>
           </div>
-          {valueChain.map(item => (
-            <Card>
-              <div>
-                <div className="p-8 sm:p-10 lg:flex-auto text-center text-navbar">
-                  <h3 className="text-2xl font-bold tracking-tight">
-                    {item.name}
-                  </h3>
-                  <p className="mt-6 text-base leading-7 invisible group-hover:visible">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            </Card>
-          ))}
         </div>
+      </div>
+
+      <div className="bg-page py-12 sm:py-24 mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        {valueChain.map(item => (
+          <Card>
+            <div className="p-8 sm:p-10 lg:flex-auto text-navbar">
+              <h3 className="text-2xl font-bold tracking-tight">{item.name}</h3>
+              <p className="mt-6 text-base leading-7 text-white group-hover:text-navbar">
+                {item.desc}
+              </p>
+            </div>
+          </Card>
+        ))}
       </div>
     </PageLayout>
   );
