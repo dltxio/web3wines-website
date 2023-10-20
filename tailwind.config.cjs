@@ -9,7 +9,11 @@ module.exports = {
         "hero-pattern": "url('images/HeroBackground.png')"
       },
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans]
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        custom: ["Better Grade", "cursive"]
+      },
+      fontSize: {
+        xxl: "20rem"
       },
       colors: {
         navbar: "#987654",
