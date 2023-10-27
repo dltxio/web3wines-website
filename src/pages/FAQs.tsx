@@ -22,7 +22,7 @@ const FAQs: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get("http://cms.dltx.io/api/faqs?populate=*")
+      .get("https://cms.dltx.io/api/faqs?populate=*")
       .then(({ data }) => {
         setFaqs(data.data);
       })
