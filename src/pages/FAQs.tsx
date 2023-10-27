@@ -2,9 +2,16 @@ import axios from "axios";
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Card, PageLayout } from "../components";
 
+interface FAQ{
+  id: number;
+  attributes: {
+    question: string;
+    answer: string;
+  }
+}
 const FAQs: React.FC = () => {
-  const [faqs, setFaqs] = useState([]);
-  const [error, setError] = useState(null);
+  const [faqs, setFaqs] = useState<FAQ[]>([]);
+  const [error, setError] = useState<Error | null>(null);
 
   useLayoutEffect(() => {
     window.scrollTo({
