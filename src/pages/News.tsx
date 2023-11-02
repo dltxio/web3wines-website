@@ -143,17 +143,17 @@ const News: React.FC = () => {
                   </a>
                 </div>
                 <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-navbar group-hover:text-white">
+                  <h3 className="my-4 text-lg font-semibold leading-6 text-navbar group-hover:text-white">
                     <a href={post.href}>
                       <span className="absolute inset-0" />
                       {post.title}
                     </a>
                   </h3>
-                  <p className="p-4 rounded-xl mt-5 line-clamp-3 text-sm leading-6 text-white group-hover:bg-orange-50 group-hover:text-navbar">
+                  <p className="p-4 pb-10 rounded-xl line-clamp-3 text-sm leading-6 text-white group-hover:bg-orange-50 group-hover:text-navbar">
                     {post.description}
                   </p>
                 </div>
-                <div className="relative mt-8 flex items-center gap-x-4">
+                <div className="relative mt-4 flex items-center gap-x-4">
                   <img
                     src={post.author.imageUrl}
                     alt=""
