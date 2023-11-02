@@ -2,12 +2,12 @@ import axios from "axios";
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Card, PageLayout } from "../components";
 
-interface FAQ{
+interface FAQ {
   id: number;
   attributes: {
     question: string;
     answer: string;
-  }
+  };
 }
 const FAQs: React.FC = () => {
   const [faqs, setFaqs] = useState<FAQ[]>([]);
@@ -22,7 +22,7 @@ const FAQs: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get("http://cms.dltx.io/api/faqs?populate=*")
+      .get("https://cms.dltx.io/api/faqs?populate=*")
       .then(({ data }) => {
         setFaqs(data.data);
       })
