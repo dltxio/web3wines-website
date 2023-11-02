@@ -39,6 +39,7 @@ const ContactUs: React.FC = () => {
         <div className="py-12">
           <a
             href={CONTACT_FORM_LINK}
+            target="_blank"
             className="p-3 rounded-xl bg-navbar font-bold hover:bg-orange-50 hover:text-navbar"
           >
             Contact Form
