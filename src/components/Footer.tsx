@@ -13,7 +13,7 @@ export function Footer() {
           <div className="mb-4 font-sans font-thin tracking-wide text-xs md:mb-0">
             &copy; {currentYear} <a href="/">WEB3 WINES</a>. ALL RIGHTS RESERVED
           </div>
-          <div className="flex mt-6 space-x-10 justify-center">
+          {/* <div className="flex mt-6 space-x-10 justify-center">
             <a
               href="/"
               className="text-white hover:text-gray-900 dark:hover:text-white"
@@ -82,7 +82,7 @@ export function Footer() {
               </svg>
               <span className="sr-only">GitHub</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
