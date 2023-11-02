@@ -41,6 +41,7 @@ const Membership: React.FC = () => {
         <div className="py-12">
           <a
             href={FORM_LINK}
+            target="_blank"
             className="p-3 rounded-xl bg-navbar font-bold hover:bg-orange-50 hover:text-navbar"
           >
             Submit EOI
