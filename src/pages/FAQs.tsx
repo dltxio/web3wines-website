@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useLayoutEffect, useState } from "react";
 import { Card, PageLayout } from "../components";
+import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 interface FAQ {
   id: number;
@@ -12,6 +14,7 @@ interface FAQ {
 const FAQs: React.FC = () => {
   const [faqs, setFaqs] = useState<FAQ[]>([]);
   const [error, setError] = useState<Error | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useLayoutEffect(() => {
     window.scrollTo({
@@ -25,11 +28,33 @@ const FAQs: React.FC = () => {
       .get("https://cms.dltx.io/api/faqs?populate=*")
       .then(({ data }) => {
         setFaqs(data.data);
+        setIsLoading(false);
       })
       .catch((error: any) => {
         setError(error);
+        setIsLoading(false);
       });
   }, []);
+
+  const renderSkeletonCard = () => {
+    return (
+      <Card>
+        <div className="grid grid-cols-8 cols-2 p-8 sm:p-10 flex-auto text-justify text-navbar">
+          <h1 className="col-span-2 text-8xl font-bold tracking-tight">
+            <Skeleton width={100} height={100} />
+          </h1>
+          <div className="col-span-6">
+            <h3 className="text-xl font-bold tracking-tight ">
+              <Skeleton count={1} />
+            </h3>
+            <p className="mt-2 leading-7 text-white group-hover:text-navbar">
+              <Skeleton count={3} />
+            </p>
+          </div>
+        </div>
+      </Card>
+    );
+  };
 
   if (error) {
     return <div> An error occurred: {error.message}</div>;
@@ -52,23 +77,32 @@ const FAQs: React.FC = () => {
         </div>
       </div>
       <div className="bg-page py-12 sm:py-24 mx-auto max-w-7xl px-6 lg:px-8 text-center">
-        {faqs.map(faq => (
-          <Card>
-            <div className="grid grid-cols-8 cols-2 p-8 sm:p-10 flex-auto text-justify text-navbar">
-              <h1 className="col-span-2 text-8xl font-bold tracking-tight">
-                {faq.id}
-              </h1>
-              <div className="col-span-6">
-                <h3 className="text-xl font-bold tracking-tight ">
-                  {faq.attributes.question}
-                </h3>
-                <p className="mt-2 leading-7 text-white group-hover:text-navbar">
-                  {faq.attributes.answer}
-                </p>
-              </div>
+        <SkeletonTheme baseColor="#987654" highlightColor="#c4bda0">
+          {isLoading ? (
+            <div>
+              {renderSkeletonCard()}
+              {renderSkeletonCard()}
             </div>
-          </Card>
-        ))}
+          ) : (
+            faqs.map(faq => (
+              <Card key={faq.id}>
+                <div className="grid grid-cols-8 cols-2 p-8 sm:p-10 flex-auto text-justify text-navbar">
+                  <h1 className="col-span-2 text-8xl font-bold tracking-tight">
+                    {faq.id}
+                  </h1>
+                  <div className="col-span-6">
+                    <h3 className="text-xl font-bold tracking-tight ">
+                      {faq.attributes.question}
+                    </h3>
+                    <p className="mt-2 leading-7 text-white group-hover:text-navbar">
+                      {faq.attributes.answer}
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            ))
+          )}
+        </SkeletonTheme>
       </div>
     </PageLayout>
   );
