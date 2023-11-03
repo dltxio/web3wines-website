@@ -16,7 +16,7 @@ const ContactUs: React.FC = () => {
       <div className="relative isolate overflow-hidden bg-cover bg-hero-pattern py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-bold tracking-tight text-navbar sm:text-6xl">
+            <h2 className="text-4xl font-bold tracking-widest text-navbar font-custom sm:text-8xl">
               Contact Us
             </h2>
             <p className="mt-2 text-lg leading-8 text-white">
