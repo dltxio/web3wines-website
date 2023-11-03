@@ -35,7 +35,7 @@ const Membership: React.FC = () => {
           Membership joining process
         </p>
         <div className="mt-6 text-lg leading-8 text-white">
-          <p>Fill in EOI form or send email to us at info@web3wines.org.</p>
+          <p>Fill in EOI form or send email to us at info@web3wines.org</p>
           <p>Our team will contact you for further process!</p>
         </div>
         <div className="py-12">
