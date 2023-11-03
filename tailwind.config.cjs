@@ -17,6 +17,7 @@ module.exports = {
       },
       colors: {
         navbar: "#987654",
+        activeNav: "#7B5F3A",
         page: "#722F37" //bordeaux
       }
     }
