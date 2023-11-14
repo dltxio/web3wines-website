@@ -84,11 +84,11 @@ const FAQs: React.FC = () => {
               {renderSkeletonCard()}
             </div>
           ) : (
-            faqs.map(faq => (
+            faqs.map((faq, index) => (
               <Card key={faq.id}>
                 <div className="grid grid-cols-8 cols-2 p-8 sm:p-10 flex-auto text-justify text-navbar">
                   <h1 className="col-span-2 text-8xl font-bold tracking-tight">
-                    {faq.id}
+                    {index + 1}
                   </h1>
                   <div className="col-span-6">
                     <h3 className="text-xl font-bold tracking-tight ">
