@@ -68,7 +68,7 @@ const BlockchainApp: React.FC = () => {
 
       <div className="bg-page py-12 sm:py-24 mx-auto max-w-7xl px-6 lg:px-8 text-center">
         {application.map(item => (
-          <Card>
+          <Card key={item.name}>
             <div className="p-8 sm:p-10 lg:flex-auto text-navbar">
               <h3 className="text-2xl font-bold tracking-tight">{item.name}</h3>
               <p className="mt-6 text-base leading-7 text-white group-hover:text-navbar">
